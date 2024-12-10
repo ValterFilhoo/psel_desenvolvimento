@@ -273,3 +273,27 @@ body {
 .itemStore img {
     width: 100%;
 }
+
+
+
+.containerBotoes, .containerBotoes2, .containerBotes3 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vw;
+    justify-content: center;
+    margin-top: 2vh; /* Espaço superior */
+}
+
+.containerBotoes button, .containerBotoes2 button, .containerBotes3 button{
+    color: #7D26C9; /* Cor do texto */
+    border: 1px solid #800080; /* Sem borda */
+    padding: 1vh 2vw; /* Espaçamento interno */
+    border-radius: 10vw; /* Borda arredondada */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-size: 1.2vw; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+.containerBotoes button:hover {
+    background-color: #9932CC; /* Cor de fundo ao passar o mouse */
+}
