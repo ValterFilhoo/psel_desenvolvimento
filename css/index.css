@@ -158,15 +158,16 @@ body {
     display: flex;
     justify-content: space-between;
     width: 90%;
-    height: 80vh;
+    height: 50vh;
     margin: auto;
     margin-top: 5vh;
     flex-wrap: wrap;
+    margin-bottom: 15vh;
 }
 
 .itemProduto {
     width: 24%;
-    height: 60%;
+    height: 100%;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -308,7 +309,6 @@ body {
 .containerBotoes button:hover, .containerBotoes2 button:hover, .containerBotes3 button:hover {
     background-color: #ddc4ea;
 }
-
 
 
 .containerCartoes {
@@ -491,21 +491,50 @@ body {
     align-items: center;
 }
 
-.containerRedesSociais {
+
+.rodapé {
     width: 90%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border-top: 0.3vh solid #DFBBFE;
 }
 
+.containerRedesSociais {
+    width: 20%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .itemRedesSociais {
-    width: 10%;
-    height: 30px;
+    width: 25%;
+    margin-right: 2vw;
 }
 
 .itemRedesSociais img {
     width: 100%;
+    height: 4vh;
     object-fit: contain;
 }
+
+.containerSubtituloRodape {
+    margin-bottom: 2vh;
+}
+
+.containerSubtituloRodape h2 {
+    font-size: 1.5vw;
+    color: #EAE8E4;
+
+}
+
+.containerLinksRodape a {
+    font-size: 1.3vw;
+    color: #EAE8E4;
+    margin-right: 2vw;
+    text-decoration: none;
+}
+
 
