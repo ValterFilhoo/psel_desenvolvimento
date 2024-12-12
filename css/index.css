@@ -45,6 +45,7 @@ body {
     display: flex;
 }
 
+
 .containerCategorias ul {
     display: flex;
     list-style: none;
@@ -54,6 +55,15 @@ body {
 
 .containerCategorias li {
     font-size: 1.5vw;
+}
+
+.containerIconMenu {
+    display: none; 
+    cursor: pointer;
+}
+
+.categoriasCelular {
+    display: none;
 }
 
 .containerDescricaoHeader {

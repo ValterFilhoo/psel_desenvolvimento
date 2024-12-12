@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/indexMobile.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Psel - Desenvolvimento</title>
 </head>
 <body>
@@ -16,6 +17,10 @@
             <div class="logotipo">
                 <img src="../img/logo.png" alt="logitipo da empresa, contendo o nome Monks.">
             </div>
+
+            <div class="containerIconMenu" id="menuCelular">
+                <i class="fa-solid fa-bars"></i>
+            </div>
     
             <nav class="containerCategorias">
                 <ul>
@@ -25,6 +30,17 @@
                     <li>Categoria 4</li>
                 </ul>
             </nav>
+
+            <nav class="categoriasCelular">
+                
+                <ul>
+                    <li>Categoria 1</li>
+                    <li>Categoria 2</li>
+                    <li>Categoria 3</li>
+                    <li>Categoria 4</li>
+                </ul>
+            </nav>
+            
 
         </div>
         
@@ -240,12 +256,12 @@
                             <span id="segundoValor">628</span>
                         </div>
                         <p>=</p>
-                        <input type="number" placeholder="Resultado*">
+                        <input type="number" id="inputResultado" placeholder="Resultado*" required>
 
                     </div>
 
                     <div class="containerBotaoFormulario">
-                        <button type="submit">Lorem ipsum</button>
+                        <button type="button" onclick="verificaSoma()">Lorem ipsum</button>
                     </div>
                     
 
@@ -291,7 +307,7 @@
                     <a>Lorem ipsum</a>
                     <a>Lorem ipsum</a>
                     <a>Lorem ipsum</a>
-                    <a>Lorem ipsum</a>
+                    <a id="link4Rodape">Lorem ipsum</a>
                 </div>
 
             </div>
@@ -299,6 +315,8 @@
         </div>
 
     </footer>
+
+    <script src="../js/scriptIndex.js"></script>
     
 </body>
 </html>
