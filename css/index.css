@@ -29,7 +29,8 @@ body {
 .containerLogoCategorias {
     width: 60%;
     display: flex;
-    justify-content: space-evenly;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logotipo {

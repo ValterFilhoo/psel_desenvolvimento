@@ -1,4 +1,4 @@
-@media (max-width: 460px) {
+@media (max-width: 480px) {
 
     .containerHeader {
         display: flex;
@@ -41,14 +41,13 @@
     }
 
     .containerIconMenu {
-        display: none; 
+        position: relative;
         cursor: pointer;
     }
 
     .containerIconMenu i {
-        position: absolute;
-        bottom: 93.5%;
-        font-size: 3vh;
+        top: 2vh;
+        font-size: 2.5vh;
         color: #fff;
     }
 
@@ -67,7 +66,6 @@
         align-items: flex-start;
         background-color: #e0b3ff;
         height: 53vh;
-
     }
 
     .categoriasCelular li {
@@ -177,7 +175,7 @@
         align-items: center;
         gap: 5vh;
         padding: 6vw;
-        height: 60vh;
+        height: 62vh;
         border-radius: 5vw;
         
     }
@@ -194,7 +192,7 @@
         font-size: 5vw;
     }
 
-    .containerBannerApp p {
+    #paragrafoBannerApp {
         font-size: 4.5vw;
     }
 
@@ -262,8 +260,8 @@
         margin-top: 2vh;
     }
 
-
     .containerFormulario {
+        width: 100vw;
         display: flex;
         flex-direction: column;
         height: auto;
@@ -283,6 +281,7 @@
     
     .formulario {
         width: 90%;
+        margin: auto;
         border-radius: 5vw;
         margin-bottom: 5vh;
     }
@@ -403,6 +402,13 @@
         margin-bottom: 2vh;
     }
 
+    #resultadoVerificacao {
+        width: 85%;
+        margin: auto;
+        margin-top: 2vh;
+        font-size: 4vw;
+    }
+
     
     .containerRedesSociais {
         width: 80%;
@@ -444,12 +450,17 @@
 
 }
 
-@media (max-width: 376px) {
+@media (max-width: 360px) {  
+
+    .containerIconMenu {
+        position: relative;
+        width: 20%;
+        height: 100%;
+    }
 
     .containerIconMenu i {
-        position: absolute;
-        bottom: 92.8%;
-        font-size: 2.5vh;
+        top: 3vh;
+        font-size: 2vh;
         color: #fff;
     }
 
@@ -459,9 +470,12 @@
         align-items: center;
         gap: 5vh;
         padding: 6vw;
-        height: 53vh;
+        height: 50vh;
         border-radius: 5vw;
-        
+    }
+
+    #paragrafoBannerApp {
+        font-size: 4vw;
     }
 
     .cartao {
@@ -479,6 +493,23 @@
 
     .cartao button {
         font-size: 5vw;
+    }
+
+    .containerFormulario {
+        width: 100vw;
+    }
+
+    .formulario {
+        width: 90%;
+        margin: auto;
+        margin-bottom: 1vh;
+    }
+
+    #resultadoVerificacao {
+        width: 85%;
+        margin: auto;
+        margin-top: 2vh;
+        font-size: 4vw;
     }
 
 
