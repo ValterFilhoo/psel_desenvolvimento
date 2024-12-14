@@ -1,8 +1,18 @@
 const mobileMenu = document.getElementById('menuCelular');
-const navList = document.querySelector('.categoriasCelular');
+const categoriasMobile = document.getElementsByClassName('categoriasCelular')[0];
 
 mobileMenu.addEventListener('click', () => {
-    navList.classList.toggle('menuAtivo');
+
+    if (categoriasMobile.classList.contains('menuAtivo')) {
+
+        categoriasMobile.classList.remove('menuAtivo');
+
+    } else {
+
+        categoriasMobile.classList.add('menuAtivo');
+        
+    }
+
 });
 
 
