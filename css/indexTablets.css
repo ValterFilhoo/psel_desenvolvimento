@@ -1,5 +1,6 @@
 
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 481px ) and (max-width: 768px) {
+    
 
     .containerHeader {
         display: flex;
@@ -8,43 +9,52 @@
         width: 100vw;
         background-color: #2D2D2D;
         color: white;
-        height: 60vh;
+        height: 70vh;
         border-bottom-left-radius: 4vw;
         border-bottom-right-radius: 4vw;
         background-image: url("../img/fundo-monks.png");
         background-position: right;
-        background-size: 45% 100%;
-        
-    }
-
-    .containerLogoCategorias {
-        width: 50%;
-        height: 8vh;
-        display: flex;
-        justify-content: space-between;
-        margin-left: 5vh;        
+        background-size: 45% 100%; 
     }
 
     .logotipo {
         width: 40%;
-        margin-left: 4vw;
-        margin-right: 5vw;
     }
-
+    
     .logotipo img {
         width: 100%;
+        height: 3vh;
         object-fit: contain;
     }
+
+    .containerLogoCategorias {
+        margin-left: 5vw;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
 
     .containerCategorias {
         display: none;
     }
 
     .containerIconMenu {
-        display: flex; 
+        display: flex;
+        position: relative;
         align-items: center;
+        justify-content: flex-start;
+        cursor: pointer;
     }
 
+    .containerIconMenu i {
+        top: 2vh;
+        font-size: 2.5vh;
+        color: #fff;
+    }
+
+    
     .categoriasCelular {
         display: none; 
         position: absolute;
@@ -54,35 +64,41 @@
         flex-direction: column;
         align-items: flex-start;
         background-color: #e0b3ff;
-        height: 53vh;
+        height: 60vh;
     }
 
     .categoriasCelular li {
         color: #000000;
         margin-top: 5vh;
         margin-left: 10vh;
-        font-size: 5vw;
+        font-size: 4vw;
         font-weight: bold;
     }
 
     .categoriasCelular.menuAtivo {
         display: flex; 
     }
-
+ 
     .containerDescricaoHeader {
-        width: 30%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vh;
+        gap: 2vh;
     }
 
     .containerDescricaoHeader h2 {
         font-size: 4vw;
     }
-
+    
     .containerDescricaoHeader p {
-        font-size: 3vw;
+        font-size: 2vw;
+        color: #EAE8E4;
+        font-weight: 400;
     }
 
     .containerScroll {
-        width: 50%;
+        width: 60%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -90,7 +106,7 @@
     }
     
     .containerImagemScroll {
-        width: 30%;
+        width: 15%;
         height: 14vh;
     }
     
@@ -100,47 +116,59 @@
         object-fit: contain;
     }
 
+    
     .tituloSecaoProdutos h2 {
-        font-size: 6vw;
+        font-size: 4vw;
+        font-weight: bold;
     }
-
+    
     .tituloSecaoProdutos p {
-        font-size: 5vw;
+        font-size: 3vw;
     }
 
     .containerProdutos {
         display: flex;
+        justify-content: space-between;
         width: 90%;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        margin-bottom: 0;
+        height: 90vh;
+        margin: auto;
+        margin-top: 5vh;
+        flex-wrap: wrap;
+        margin-bottom: 15vh;
     }
-
+    
     .itemProduto {
-        padding: 2vw;
-        width: 100%;
-        height: 60%;
+        width: 48%;
+        height: 46%;
+        background-color: white;
         display: flex;
-        margin-bottom: 4vh;
-        gap: 0;
-        border-radius: 3vw;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0.7vw;
+        border-radius: 0.5vw;
     }
 
-    .itemProduto img {
-        max-width: 100%;
-        height: 75%;
-        object-fit: fill;
-    }
 
     .itemProduto h3 {
-        margin-top: 2vh;
-        font-size: 5vw;
+        text-wrap: nowrap;
+        font-size: 4vw;
+        font-weight: bold;
+        margin: 0;
+    }
+    
+    .itemProduto p {
+        font-size: 3vw;
+        margin-bottom: 1vh;
     }
 
-    .itemProduto p {
-        width: 100%;
-        font-size: 4.5vw;
+        
+    .item1 h3 {
+        font-size: 4vw;
+        margin-bottom: 2vh;
+    }
+
+    .item1 p {
+        font-size: 3vw;
         margin-bottom: 2vh;
     }
 
@@ -150,110 +178,59 @@
         margin-top: 10vh;
     }
 
-    .item1 h3 {
-        font-size: 5vw;
-    }
-
-    .item1 p {
-        font-size: 4vw;
-    }
-
-    .containerBannerAppPai {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 55vh;
-        gap: 5vh;
-        padding: 6vw;
-        border-radius: 5vw;
-    }
-
-    .containerBannerApp {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 3vh;
-        margin: 0;
-    }
-
     .containerBannerApp h2 {
-        font-size: 5vw;
+        font-size: 3.5vw;
     }
 
+  
     #paragrafoBannerApp {
-        font-size: 4.5vw;
+        font-size: 2vw;
     }
 
+        
     .containerStore {
-        width: 100%;
-        max-height: 20vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-    .itemStore {
-        margin-bottom: 1vh;
+        width: 28%;
     }
 
     .itemStore img {
-        height: 100%;
+        height: 6vh;
     }
-    .secaoBotoes {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-    }
-
+    
     .secaoBotoes h2 {
-        font-size: 5vw;
-        margin-left: 5vw;
-    }
-
-    .containerBotoes, .containerBotoes2, .containerBotoes3 {
-        display: flex;
+        font-size: 4vw;
     }
 
     .containerBotoes button, .containerBotoes2 button, .containerBotes3 button {
-        width: 40%;
-        margin-bottom: 1vh;
-        font-size: 4vw;
-        justify-content: space-between;
-    }
-
-    .containerCartoes {
-        display: flex;
-        flex-direction: column;
+        font-size: 1.9vw; 
     }
 
     .cartao {
-        width: 100%;
-        height: 45vh;
-        margin-bottom: 5vh;
-        padding: 6vw;
+        width: 32%;
+        height: 30vh;
+        background-color: #fff;
+        padding: 2vw;
+        border: 2px solid #e8b6e8bd;
+        border-radius: 1vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2.3vh;
     }
+
 
     .cartao h2 {
-        font-size: 4.5vh;
+        font-size: 3vw;
     }
-
+    
     .cartao p {
-        font-size: 4vw;
+        font-size: 2vw;
     }
-
+    
     .cartao button {
-        align-self: center;
-        width: 50%;
-        padding: 3vw;
-        font-size: 4vw;
-        font-weight: bold;
-        cursor: pointer;
-        background-color: #DFBBFE;
-        border: none;
-        border-radius: 0.4vw;
-        margin-top: 2vh;
+        padding: 0.9vw;
+        font-size: 2vw;
     }
 
+    
     .containerFormulario {
         width: 100vw;
         display: flex;
@@ -263,7 +240,6 @@
 
     .containerImagemFormulario {
         width: 80%;
-        height: 50%;
         margin-top: 4vh;
         margin-bottom: 4vh;
     }
@@ -285,15 +261,15 @@
     }
     
     .titulosFormulario h2 {
-        font-size: 5vw;
-    }
-
-    .titulosFormulario h3 {
         font-size: 4vw;
     }
 
-    .titulosFormulario h4 {
+    .titulosFormulario h3 {
         font-size: 3vw;
+    }
+
+    .titulosFormulario h4 {
+        font-size: 2.5vw;
     }
 
     .inputsFormLinha1, .inputsFormLinha2 {
@@ -347,7 +323,7 @@
     }
 
     #primeiroValor, #segundoValor {
-        font-size: 5vw;
+        font-size: 4.5vw;
         color: #7D26C9;
         font-weight: bold;
     }
@@ -358,11 +334,6 @@
         margin: 0 1vw;
     }
     
-    
-    .containerVerificacao p {
-        font-size: 6vw;
-        color: #2D2D2D;
-    }
 
     .containerVerificacao input {
         width: 42%;
@@ -400,7 +371,7 @@
         width: 85%;
         margin: auto;
         margin-top: 2vh;
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
 
     
@@ -425,21 +396,25 @@
     }
 
     .containerSubtituloRodape h2 {
-        font-size: 5vw;
+        font-size: 4.5vw;
     }
 
     .containerLinksRodape {
+        width: 90%;
+        margin: auto;
         display: flex;
         flex-wrap: wrap;
         margin-top: 1vh;
+        justify-content: space-between;
     }
 
     .containerLinksRodape a {
-        font-size: 4.5vw;
+        font-size: 3.8vw;
     }
 
     #link4Rodape {
         margin: auto;
     }
 
+    
 }

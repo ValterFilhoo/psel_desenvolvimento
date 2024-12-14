@@ -7,7 +7,7 @@
 
 body {
     background-color: rgb(231, 230, 230);
-    overflow-x: hidden;
+    overflow-x: none;
 }
 
 .containerHeader {
@@ -27,6 +27,7 @@ body {
 }
 
 .containerLogoCategorias {
+    margin-left: 3.5vw;
     width: 60%;
     display: flex;
     align-items: center;
@@ -45,7 +46,6 @@ body {
 .containerCategorias {
     display: flex;
 }
-
 
 .containerCategorias ul {
     display: flex;
@@ -155,11 +155,13 @@ body {
     text-wrap: nowrap;
     font-size: 1.7vw;
     font-weight: bold;
+    margin: 0;
 }
 
 .itemProduto p {
     font-size: 1.4vw;
 }
+
 
 .containerGrid {
     display: grid;

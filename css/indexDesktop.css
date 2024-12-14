@@ -1,0 +1,41 @@
+@media (min-width: 1024px ) and (max-width: 1200px) {
+
+    .containerLogoCategorias {
+        margin-left: 5vw;
+        width: 50%;
+    }
+
+    .containerCategorias li {
+        font-size: 1.5vw;
+    }
+    
+
+    .formulario {
+        background-color: #EAE8E4;
+        margin-left: 5vh;
+        padding: 2vw;
+        max-height: 65%;
+        border: none;
+        border-radius: 2vw;
+    }
+
+    .containerBotaoFormulario {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3vh;
+    }
+
+    .cartao {
+        width: 32%;
+        height: 40vh;
+        background-color: #fff;
+        padding: 2vw;
+        border: 2px solid #e8b6e8bd;
+        border-radius: 1vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2.3vh;
+    }
+
+}
